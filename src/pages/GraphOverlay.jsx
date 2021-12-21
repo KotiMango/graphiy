@@ -3,7 +3,6 @@ import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import DateRangePicker from '../components/DateRangePicker';
 import { fetchDataSet } from '../services/apiService';
-import { Chart as ChartJS } from 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
 
 export default function GraphOverlay() {
