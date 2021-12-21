@@ -7,6 +7,24 @@ Button {
   width: 10vw;
   height: 10vh;
 }
+
 .chart-disp {
+  display: inline-block;
   width: 40vw;
+  margin: 80px;
+}
+@media only screen and (max-width: 600px) {
+  .chart-disp {
+    display: flex;
+    direction: column;
+    width: 100vw;
+    height: 25vh;
+    margin: 0;
+  }
+  .control-panel {
+    margin: 0;
+  }
+  .name {
+    transform: scale(0.4);
+  }
 }

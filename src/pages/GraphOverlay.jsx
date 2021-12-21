@@ -93,22 +93,25 @@ export default function GraphOverlay() {
             setIsDatePicking={setIsDatePicking}
           />
         )}
-        {dataset[0] &&
-          data.map((val) => (
-            <div className='chart-disp'>
-              <h1>{val.name}</h1>
-              <Line
-                data={val.innerData}
-                options={{
-                  title: {
-                    display: true,
-                    text: 'Average Rainfall per month',
-                    fontSize: 20,
-                  },
-                }}
-              />
-            </div>
-          ))}
+        {dataset[0] && (
+          <div className='chart-grid'>
+            {data.map((val) => (
+              <div className='chart-disp'>
+                <h1 className='name'>{val.name}</h1>
+                <Line
+                  data={val.innerData}
+                  options={{
+                    title: {
+                      display: true,
+                      text: 'Average Rainfall per month',
+                      fontSize: 20,
+                    },
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
