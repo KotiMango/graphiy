@@ -53,15 +53,6 @@ export default function GraphOverlay() {
               borderWidth: 2,
               data: country.map((val) => val.Active),
             },
-            {
-              label: 'Recovered',
-              fill: false,
-              lineTension: 0.5,
-              backgroundColor: '#ffe600',
-              borderColor: 'rgba(0,0,0,1)',
-              borderWidth: 2,
-              data: country.map((val) => val.Recovered),
-            },
           ],
         },
       };
