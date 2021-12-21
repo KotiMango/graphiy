@@ -25,7 +25,7 @@ export default function GraphOverlay() {
       `from=${date.toISOString()}&to=${new Date().toISOString()}`
     );
   };
-  
+
   if (dataset[0]) {
     data = dataset.map((country) => {
       return {
@@ -42,7 +42,7 @@ export default function GraphOverlay() {
               backgroundColor: '#ff0000',
               borderColor: 'rgba(0,0,0,1)',
               borderWidth: 2,
-              data: country.map((val) => val.Death),
+              data: country.map((val) => val.Deaths),
             },
             {
               label: 'Active',
